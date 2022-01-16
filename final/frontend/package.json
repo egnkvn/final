@@ -32,6 +32,9 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.0"
   },
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
