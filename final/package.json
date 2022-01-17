@@ -7,8 +7,7 @@
   "author": "moose1108 <75203439+moose1108@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "cd frontend &&  yarn start",
-    "server": "cd backend && yarn server"
+    "start": "cd backend && yarn start"
   },
   "dependencies": {
     "apexcharts": "^3.33.0",
@@ -16,12 +15,62 @@
     "express": "^4.17.2",
     "nodemon": "^2.0.15",
     "react-apexcharts": "^1.3.9",
-    "react-router-dom": "^6.2.1"
+    "react-router-dom": "^6.2.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.8",
+    "@mui/styles": "^5.2.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "animejs": "^3.2.1",
+    "antd": "^4.18.2",
+    "axios": "^0.24.0",
+    "data-fns": "^0.1.8",
+    "date-fns": "^2.28.0",
+    "mapbox-gl": "^2.6.1",
+    "react": "^17.0.2",
+    "react-big-calendar": "^0.38.4",
+    "react-datepicker": "^4.5.0",
+    "react-dom": "^17.0.2",
+    "react-geocode": "^0.2.3",
+    "react-map-gl": "^6.1.18",
+    "react-map-gl-geocoder": "^2.2.0",
+    "react-scripts": "5.0.0",
+    "react-spinners": "^0.11.0",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^2.1.0",
+    "bcrypt": "^5.0.1",
+    "dotenv-defaults": "^3.0.0",
+    "mongoose": "^6.1.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
     "@babel/node": "^7.16.8",
-    "@babel/preset-env": "^7.16.8"
+    "@babel/preset-env": "^7.16.8",
+    "worker-loader": "^3.0.8"
+  },
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
