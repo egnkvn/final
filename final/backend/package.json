@@ -19,6 +19,6 @@
   },
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js --ext js --exc babel-node"
+    "server": "nodemon server.js --ext js --exc babel-node"
   }
 }

@@ -7,8 +7,8 @@
   "author": "moose1108 <75203439+moose1108@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "cd backend &&  yarn start",
-    "start_react": "react-scripts start"
+    "start": "cd frontend &&  yarn start",
+    "server": "cd backend && yarn server"
   },
   "dependencies": {
     "apexcharts": "^3.33.0",
