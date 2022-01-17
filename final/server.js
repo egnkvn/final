@@ -24,6 +24,24 @@ import http from "http";
   app.get("/*", function (req, res) {
     res.sendFile(path.join(__dirname, "build", "index.html"));
   });
+  app.get("/calendar",function (req, res) {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
+  app.get("/add",function (req, res) {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
+  app.get("/graph",function (req, res) {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
+  app.get("/property",function (req, res) {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
+  app.get("/map",function (req, res) {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
+  app.get("/signin",function (req, res) {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
   const port = process.env.PORT || 5000
   const httpServer = http.createServer(app);
   httpServer.listen(port, () => {
