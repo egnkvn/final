@@ -10,12 +10,6 @@
     "build": "react-scripts build",
     "start_react": "react-scripts start"
   },
-  resolve: {
-  alias: {
-    "react/jsx-dev-runtime": "react/jsx-dev-runtime.js",
-    "react/jsx-runtime": "react/jsx-runtime.js"
-  }
-},
   "dependencies": {
     "apexcharts": "^3.33.0",
     "cors": "^2.8.5",
