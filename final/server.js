@@ -5,6 +5,7 @@ import './backend/mongo.js'
 import path from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import http from "http";
   const __dirname = dirname(fileURLToPath(import.meta.url));
   const app = express()
   // init middleware
@@ -24,6 +25,7 @@ import { fileURLToPath } from "url";
     res.sendFile(path.join(__dirname, "build", "index.html"));
   });
   const port = process.env.PORT || 5000
-  app.listen(port, () => {
+  const httpServer = http.createServer(app);
+  httpServer.listen(port, () => {
     console.log(`Server is up on port ${port}`)
 })
