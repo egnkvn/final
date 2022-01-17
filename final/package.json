@@ -10,6 +10,8 @@
     "build": "react-scripts build",
     "start_react": "react-scripts start"
   },
+  "./jsx-runtime": "./jsx-runtime.js",
+   "./jsx-dev-runtime": "./jsx-dev-runtime.js",
   "dependencies": {
     "apexcharts": "^3.33.0",
     "cors": "^2.8.5",
