@@ -1,6 +1,5 @@
 {
   "name": "wp1101_clowns_project",
-  "type": "module",
   "version": "0.1.0",
   "repository": "https://github.com/egnkvn/final.git",
   "author": "moose1108 <75203439+moose1108@users.noreply.github.com>",
@@ -10,8 +9,6 @@
     "build": "react-scripts build",
     "start_react": "react-scripts start"
   },
-  "./jsx-runtime": "./jsx-runtime.js",
-   "./jsx-dev-runtime": "./jsx-dev-runtime.js",
   "dependencies": {
     "apexcharts": "^3.33.0",
     "cors": "^2.8.5",
