@@ -6,7 +6,6 @@ import { Layout } from 'antd';
 import { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from '../axios.js'
-import RingLoader from 'react-spinners/RingLoader'
 
 const NormalLoginForm = ({ login2 ,Login, password, username, confirmpassword, setConfirmpassword, setPassword, setUsername }) => {
     console.log(login2);

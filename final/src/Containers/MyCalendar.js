@@ -4,7 +4,7 @@ import axios from '../axios.js'
 import moment from "moment";
 import "../Css/MyCalendar.css";
 import { css } from "@emotion/react";
-import RingLoader from 'react-spinners/RingLoader'
+import RingLoader from 'react-spinners/RingLoader.js'
 const { Title, Text } = Typography;
 const { TabPane } = Tabs;
 
@@ -21,13 +21,13 @@ const MyCalendar = ({ username }) => {
   let Change = false;
   const columns = [
     {
-      title: 'é¡žåˆ¥',
+      title: 'é¡????',
       dataIndex: 'type',
     }, {
-      title: 'é‡‘é¡(å…ƒ)',
+      title: '???é¡?(???)',
       dataIndex: 'cost',
     }, {
-      title: 'å‚™è¨»',
+      title: '???è¨?',
       dataIndex: 'content',
     }, {
       title: '',
@@ -115,21 +115,21 @@ const MyCalendar = ({ username }) => {
     return (
       <>
         <Text type="danger" strong={true}>
-          {curRecord.filter((x) => { return x.date === eachDate }).length === 0 ? '' : "æ”¯å‡º: "}
+          {curRecord.filter((x) => { return x.date === eachDate }).length === 0 ? '' : "??¯å??: "}
         </Text>
         <Text type="danger" strong={true}>
           {curRecord.filter((x) => { return x.date === eachDate }).length === 0 ?
-            '' : curRecord.filter((x) => { return (x.date === eachDate && x.status === "æ”¯å‡º") }).reduce((sum, item) =>
+            '' : curRecord.filter((x) => { return (x.date === eachDate && x.status === "??¯å??") }).reduce((sum, item) =>
               sum + item.cost, 0)
           }
         </Text>
         <br></br>
         <Text type="success" strong={true}>
-          {curRecord.filter((x) => { return x.date === eachDate }).length === 0 ? '' : "æ”¶å…¥: "}
+          {curRecord.filter((x) => { return x.date === eachDate }).length === 0 ? '' : "??¶å??: "}
         </Text>
         <Text type="success" strong={true}>
           {curRecord.filter((x) => { return x.date === eachDate }).length === 0 ?
-            '' : curRecord.filter((x) => { return (x.date === eachDate && x.status === "æ”¶å…¥") }).reduce((sum, item) =>
+            '' : curRecord.filter((x) => { return (x.date === eachDate && x.status === "??¶å??") }).reduce((sum, item) =>
               sum + item.cost, 0)
           }
         </Text>
@@ -142,21 +142,21 @@ const MyCalendar = ({ username }) => {
     return (
       <>
         <Text type="danger" strong={true}>
-          {curRecord.filter((x) => { return x.date_YM === eachMonth }).length === 0 ? '' : "æ”¯å‡º: "}
+          {curRecord.filter((x) => { return x.date_YM === eachMonth }).length === 0 ? '' : "??¯å??: "}
         </Text>
         <Text type="danger" strong={true}>
           {curRecord.filter((x) => { return x.date_YM === eachMonth }).length === 0 ?
-            '' : curRecord.filter((x) => { return (x.date_YM === eachMonth && x.status === "æ”¯å‡º") }).reduce((sum, item) =>
+            '' : curRecord.filter((x) => { return (x.date_YM === eachMonth && x.status === "??¯å??") }).reduce((sum, item) =>
               sum + item.cost, 0)
           }
         </Text>
         <br></br>
         <Text type="success" strong={true}>
-          {curRecord.filter((x) => { return x.date_YM === eachMonth }).length === 0 ? '' : "æ”¶å…¥: "}
+          {curRecord.filter((x) => { return x.date_YM === eachMonth }).length === 0 ? '' : "??¶å??: "}
         </Text>
         <Text type="success" strong={true}>
           {curRecord.filter((x) => { return x.date_YM === eachMonth }).length === 0 ?
-            '' : curRecord.filter((x) => { return (x.date_YM === eachMonth && x.status === "æ”¶å…¥") }).reduce((sum, item) =>
+            '' : curRecord.filter((x) => { return (x.date_YM === eachMonth && x.status === "??¶å??") }).reduce((sum, item) =>
               sum + item.cost, 0)
           }
         </Text>
@@ -173,12 +173,12 @@ const MyCalendar = ({ username }) => {
           onOk={handleOk}
           onCancel={handleCancel}
         >
-          <Tabs defaultActiveKey="æ”¯å‡º" centered >
-            <TabPane tab="æ”¯å‡º" key="æ”¯å‡º">
-              <Table dataSource={createTable("æ”¯å‡º")} columns={columns} />
+          <Tabs defaultActiveKey="??¯å??" centered >
+            <TabPane tab="??¯å??" key="??¯å??">
+              <Table dataSource={createTable("??¯å??")} columns={columns} />
             </TabPane>
-            <TabPane tab="æ”¶å…¥" key="æ”¶å…¥">
-              <Table dataSource={createTable("æ”¶å…¥")} columns={columns} />
+            <TabPane tab="??¶å??" key="??¶å??">
+              <Table dataSource={createTable("??¶å??")} columns={columns} />
             </TabPane>
           </Tabs>
         </Modal>

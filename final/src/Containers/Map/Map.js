@@ -5,7 +5,7 @@ import MapGL, { NavigationControl, ScaleControl, GeolocateControl, LinearInterpo
 import Geocoder from "react-map-gl-geocoder";
 import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
 /* eslint import/no-webpack-loader-syntax: off */
-import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
+import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker.js';
 import { DatePicker } from 'antd';
 import moment from "moment";
 import axios from "../../axios.js"

@@ -5,7 +5,7 @@ import moment from "moment";
 import '../Css/PieGraph.css'
 import axios from '../axios.js'
 import { useState, useEffect } from 'react';
-import RingLoader from 'react-spinners/RingLoader'
+import RingLoader from 'react-spinners/RingLoader.js'
 import { css } from "@emotion/react";
 const { TabPane } = Tabs;
 const { Search } = Input;

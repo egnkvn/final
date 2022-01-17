@@ -1,18 +1,16 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import {Marker} from 'react-map-gl';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
+import DialogActions from '@mui/material/DialogActions/index.js';
+import DialogContent from '@mui/material/DialogContent/index.js';
 import {Typography, Button, Dialog} from '@mui/material';
-import DateRangeIcon from '@mui/icons-material/DateRange';
-import PlaceIcon from '@mui/icons-material/Place';
-import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
+import DateRangeIcon from '@mui/icons-material/DateRange.js';
+import PlaceIcon from '@mui/icons-material/Place.js';
+import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined.js';
 import { makeStyles } from '@mui/styles';
 import pinimg from './pinimg.png'
 import Geocode from "react-geocode";
 import { css } from "@emotion/react";
-import RingLoader from 'react-spinners/RingLoader'
+import RingLoader from 'react-spinners/RingLoader.js'
 const SIZE=50
 const useStyles = makeStyles(theme => ({
   wrapIcon: {
