@@ -3,7 +3,7 @@ import React from 'react';
 import { Tabs, Button, Space, Input, Typography, message, DatePicker } from 'antd';
 import moment from "moment";
 import '../Css/PieGraph.css'
-import axios from '../axios'
+import axios from '../axios.js'
 import { useState, useEffect } from 'react';
 import RingLoader from 'react-spinners/RingLoader'
 import { css } from "@emotion/react";
@@ -20,7 +20,7 @@ const Graph = ({ username }) => {
     const [Date, setDate] = useState(moment())
     const [labels, setLabels] = useState([]);
     const [series, setSeries] = useState([]);
-    const [status, setStatus] = useState("支出");
+    const [status, setStatus] = useState("??��??");
     const [loading2, setLoading2] = useState(false);
     const getdata = async () => {
         const YM = Date.format("YYYY-MM")
@@ -102,17 +102,17 @@ const Graph = ({ username }) => {
             <RingLoader color="#971d1d" css={override} size={100} />
         </div>) : (
         <Tabs defaultActiveKey={status} centered onTabClick={(key) => setStatus(key)}>
-            <TabPane tab="支出" key="支出">
+            <TabPane tab="??��??" key="??��??">
                 <DatePicker size="large" value={Date} picker="month" onChange={(date) => { setDate(date) }} allowClear={false} />
                 <div className='pie'>
-                    {/*<Button  type='primary' onClick={()=>{HandleChange()}}> 確認 </Button>*/}
+                    {/*<Button  type='primary' onClick={()=>{HandleChange()}}> 確�?? </Button>*/}
                     <Chart options={options} type="pie" series={series} width="500" height='1000' />
                 </div>
             </TabPane>
-            <TabPane tab="收入" key="收入">
+            <TabPane tab="??��??" key="??��??">
                 <DatePicker size="large" value={Date} picker="month" onChange={(date) => { setDate(date) }} allowClear={false} />
                 <div className='pie'>
-                    {/*<Button  type='primary' onClick={()=>{HandleChange()}}> 確認 </Button>*/}
+                    {/*<Button  type='primary' onClick={()=>{HandleChange()}}> 確�?? </Button>*/}
                     <Chart options={options} type='pie' series={series} width="500" height='1000' />
                 </div>
             </TabPane>

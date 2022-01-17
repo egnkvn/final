@@ -1,8 +1,7 @@
 {
   "name": "wp1101_clowns_project",
   "type": "module",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
   "repository": "https://github.com/egnkvn/final.git",
   "author": "moose1108 <75203439+moose1108@users.noreply.github.com>",
   "license": "MIT",

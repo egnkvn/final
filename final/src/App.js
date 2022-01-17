@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Routes, Route, Navigate, NavLink, useNavigate } from "react-router-dom";
-import MyCalendar from './Containers/MyCalendar';
-import Add from './Containers/Add';
-import Signin from './Containers/Sign_in';
-import Graph from './Containers/PieChart';
-import Property from './Containers/Property';
+import MyCalendar from './Containers/MyCalendar.js';
+import Add from './Containers/Add.js';
+import Signin from './Containers/Sign_in.js';
+import Graph from './Containers/PieChart.js';
+import Property from './Containers/Property.js';
 import { Layout, Menu, Typography } from 'antd';
 import {
   BarChartOutlined,
@@ -17,8 +17,8 @@ import {
 } from '@ant-design/icons';
 import "./Css/Menu.css"
 import axios from './axios.js'
-import Budget from './Containers/Budget';
-import Map from './Containers/Map/Map';
+import Budget from './Containers/Budget.js';
+import Map from './Containers/Map/Map.js';
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 const { Title, Text } = Typography;
@@ -73,30 +73,30 @@ function App() {
               </Menu.Item>
               <Menu.Item key='2' style={{ height: '60px', fontSize: '20px', marginTop: '0px' }} icon={<InsertRowAboveOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/calendar" />
-                Êó•ÊõÜ
+                ??•Ê??
               </Menu.Item>
               <Menu.Item key='3' style={{ height: '60px', fontSize: '20px' }} icon={<BarChartOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/graph" />
-                ÂúñË°®
+                ???Ë°?
               </Menu.Item>
               <Menu.Item key='4' style={{ height: '60px', fontSize: '20px' }} icon={<DollarOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/property" />
-                Ë≥áÁî¢
+                Ë≥????
               </Menu.Item>
               <Menu.Item key='5' style={{ height: '60px', fontSize: '20px' }} icon={<EnvironmentOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/map" />
-                Âú∞Âúñ
+                ??∞Â??
               </Menu.Item> 
               {/* <Menu.Item key='6' style={{ height: '60px', fontSize: '20px' }} icon={<ScheduleOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/budget" />
-                ???ÔøΩ?
+                ???Ôø??
               </Menu.Item> */}
               {/* <Menu.Item key='7' style={{ height: '60px', fontSize: '20px' }} icon={<SettingOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/setting" />
                 Ë®≠ÔøΩ??
               </Menu.Item> */}
-              <SubMenu key="sub1" title="ÁôªÂá∫" style={{ height: '60px', fontSize: '20px' }} icon={<ImportOutlined style={{ fontSize: '110%' }} />}>
-                <Menu.Item key="ÁôªÂá∫" onClick={() => handleLogout()}>Á¢∫Ë™ç</Menu.Item>
+              <SubMenu key="sub1" title="??ªÂ??" style={{ height: '60px', fontSize: '20px' }} icon={<ImportOutlined style={{ fontSize: '110%' }} />}>
+                <Menu.Item key="??ªÂ??" onClick={() => handleLogout()}>Á¢∫Ë??</Menu.Item>
               </SubMenu>
             </Menu>
           </Sider>

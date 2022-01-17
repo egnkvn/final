@@ -8,8 +8,8 @@ import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even i
 import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 import { DatePicker } from 'antd';
 import moment from "moment";
-import axios from "../../axios"
-import Pins from '../../Component/Pins'
+import axios from "../../axios.js"
+import Pins from '../../Component/Pins.js'
 mapboxgl.workerClass = MapboxWorker;
 
 
@@ -50,7 +50,7 @@ const Map = ({username}) => {
             params: {
                 username, // give backend
                 date_Y:Y,
-                status:"æ”¯å‡º"
+                status:"??¯å??"
             },
         })
         setData(NewRecords);
