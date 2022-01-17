@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Routes, Route, Navigate, NavLink, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router,Routes, Route, Navigate, NavLink, useNavigate} from "react-router-dom";
 import MyCalendar from './Containers/MyCalendar.js';
 import Add from './Containers/Add.js';
 import Signin from './Containers/Sign_in.js';
@@ -102,6 +102,7 @@ function App() {
           </Sider>
           <Layout style={{ marginLeft: 200 }}>
             <Content style={{ margin: '24px 16px 0', overflow: 'initial', textAlign: 'center' }}>
+              <Router>
               <Routes>
                 <Route exact path="/calendar" element={<MyCalendar username={username} />} />
                 <Route exact path="/add" element={<Add username={username} />} />
@@ -111,6 +112,7 @@ function App() {
                 <Route exact path="/map" element={<Map username={username}/>} />
                 <Route path="/" element={<Navigate to="/calendar" />} />
               </Routes>
+              </Router>
             </Content>
           </Layout>
         </Layout>
