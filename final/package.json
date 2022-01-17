@@ -10,6 +10,7 @@
     "build": "react-scripts build",
     "start_react": "react-scripts start"
   },
+  'react/jsx-runtime': require.resolve('react/jsx-runtime'),
   "dependencies": {
     "apexcharts": "^3.33.0",
     "cors": "^2.8.5",
