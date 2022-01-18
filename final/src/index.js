@@ -4,8 +4,11 @@ import './index.css';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals.js';
 import 'antd/dist/antd.min.css';
+import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
-      <App />,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
