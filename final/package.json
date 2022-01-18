@@ -56,9 +56,6 @@
     "@babel/preset-env": "^7.16.8",
     "worker-loader": "^3.0.8"
   },
-  "resolutions": {
-    "mini-css-extract-plugin": "2.4.5"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
