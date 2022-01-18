@@ -50,7 +50,7 @@ const Map = ({username}) => {
             params: {
                 username, // give backend
                 date_Y:Y,
-                status:"??¯å??"
+                status:"æ”¯å‡º"
             },
         })
         setData(NewRecords);

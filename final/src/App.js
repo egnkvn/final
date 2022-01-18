@@ -73,30 +73,30 @@ function App() {
               </Menu.Item>
               <Menu.Item key='2' style={{ height: '60px', fontSize: '20px', marginTop: '0px' }} icon={<InsertRowAboveOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/calendar" />
-                ??•Ê??
+                Êó•ÊõÜ
               </Menu.Item>
               <Menu.Item key='3' style={{ height: '60px', fontSize: '20px' }} icon={<BarChartOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/graph" />
-                ???Ë°?
+                ÂúñË°®
               </Menu.Item>
               <Menu.Item key='4' style={{ height: '60px', fontSize: '20px' }} icon={<DollarOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/property" />
-                Ë≥????
+                Ë≥áÁî¢
               </Menu.Item>
               <Menu.Item key='5' style={{ height: '60px', fontSize: '20px' }} icon={<EnvironmentOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/map" />
-                ??∞Â??
+                Âú∞Âúñ
               </Menu.Item> 
               {/* <Menu.Item key='6' style={{ height: '60px', fontSize: '20px' }} icon={<ScheduleOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/budget" />
-                ???Ôø??
+                È†êÁÆó
               </Menu.Item> */}
               {/* <Menu.Item key='7' style={{ height: '60px', fontSize: '20px' }} icon={<SettingOutlined style={{ fontSize: '110%' }} />}>
                 <NavLink to="/setting" />
-                Ë®≠ÔøΩ??
+                Ë®≠ÂÆö
               </Menu.Item> */}
-              <SubMenu key="sub1" title="??ªÂ??" style={{ height: '60px', fontSize: '20px' }} icon={<ImportOutlined style={{ fontSize: '110%' }} />}>
-                <Menu.Item key="??ªÂ??" onClick={() => handleLogout()}>Á¢∫Ë??</Menu.Item>
+              <SubMenu key="sub1" title="ÁôªÂá∫" style={{ height: '60px', fontSize: '20px' }} icon={<ImportOutlined style={{ fontSize: '110%' }} />}>
+                <Menu.Item key="ÁôªÂá∫" onClick={() => handleLogout()}>Á¢∫ÂÆö</Menu.Item>
               </SubMenu>
             </Menu>
           </Sider>

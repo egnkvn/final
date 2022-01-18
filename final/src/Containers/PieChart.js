@@ -20,7 +20,7 @@ const Graph = ({ username }) => {
     const [Date, setDate] = useState(moment())
     const [labels, setLabels] = useState([]);
     const [series, setSeries] = useState([]);
-    const [status, setStatus] = useState("??¯å??");
+    const [status, setStatus] = useState("æ”¯å‡º");
     const [loading2, setLoading2] = useState(false);
     const getdata = async () => {
         const YM = Date.format("YYYY-MM")
@@ -102,17 +102,17 @@ const Graph = ({ username }) => {
             <RingLoader color="#971d1d" css={override} size={100} />
         </div>) : (
         <Tabs defaultActiveKey={status} centered onTabClick={(key) => setStatus(key)}>
-            <TabPane tab="??¯å??" key="??¯å??">
+            <TabPane tab="æ”¯å‡º" key="æ”¯å‡º">
                 <DatePicker size="large" value={Date} picker="month" onChange={(date) => { setDate(date) }} allowClear={false} />
                 <div className='pie'>
-                    {/*<Button  type='primary' onClick={()=>{HandleChange()}}> ç¢ºè?? </Button>*/}
+                    {/*<Button  type='primary' onClick={()=>{HandleChange()}}> ç¢ºï¿½?? </Button>*/}
                     <Chart options={options} type="pie" series={series} width="500" height='1000' />
                 </div>
             </TabPane>
-            <TabPane tab="??¶å??" key="??¶å??">
+            <TabPane tab="æ”¶å…¥" key="æ”¶å…¥">
                 <DatePicker size="large" value={Date} picker="month" onChange={(date) => { setDate(date) }} allowClear={false} />
                 <div className='pie'>
-                    {/*<Button  type='primary' onClick={()=>{HandleChange()}}> ç¢ºè?? </Button>*/}
+                    {/*<Button  type='primary' onClick={()=>{HandleChange()}}> ç¢ºï¿½?? </Button>*/}
                     <Chart options={options} type='pie' series={series} width="500" height='1000' />
                 </div>
             </TabPane>

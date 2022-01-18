@@ -3,7 +3,6 @@ import fetch from "node-fetch";
 const wakeUpDyno = (url, interval = 14, callback) => {
     const milliseconds = interval * 60000;
     setTimeout(() => {
-
         try { 
             console.log(`setTimeout called.`);
             // HTTP GET request to the dyno's url
@@ -18,7 +17,7 @@ const wakeUpDyno = (url, interval = 14, callback) => {
                 callback(); // execute callback, if passed
             }
             catch (e) { // catch callback error
-                callback ? console.log("Callback failed: ", e.message) : null;
+                console.log("Callback failed: ", e.message);
             }
             finally {
                 // do it all again

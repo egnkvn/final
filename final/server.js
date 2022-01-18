@@ -5,6 +5,7 @@ import './backend/mongo.js'
 import path from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import wakeUpDyno from "./backend/Routers/wakeUpDyno.js"
   const __dirname = dirname(fileURLToPath(import.meta.url));
   const app = express()
   // init middleware
@@ -20,5 +21,7 @@ import { fileURLToPath } from "url";
   });
   const port = process.env.PORT || 5000
   app.listen(port, () => {
+    const DYNO_URL = "https://moosetherecord4.herokuapp.com/"
+    wakeUpDyno(DYNO_URL);
     console.log(`Server is up on port ${port}`)
 })
